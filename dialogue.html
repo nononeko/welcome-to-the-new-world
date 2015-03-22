@@ -11,10 +11,13 @@
 </style>
 
 <script>
-  var description = document.getElementById("description");
-  description.innerHTML = "Test Test content";
-  var choice1 = document.getElementById("choice1");
-  choice1.innerHTML = "Choice 1";
-   var choice2 = document.getElementById("choice2");
-  choice2.innerHTML = "Choice 2";
+function applyNode(description, choice1, choice2) {
+  var descriptionEl = document.getElementById("description");
+  descriptionEl.innerHTML = description;
+  var choice1El = document.getElementById("choice1");
+  choice1El.innerHTML = choice1;
+   var choice2El = document.getElementById("choice2");
+  choice2El.innerHTML = choice2;
+}
+applyNode("Test test content", "Choice1", "Choice2")
 </script>
